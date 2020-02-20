@@ -20,7 +20,8 @@ val i: Int = d.toInt
 println("*"*5)
 
 val r = raw".*,(\d{3})-(\d{3})-(\d{4}),.*".r
-val s = "Frank,123 Main,925-555-1943,95122"
+val s2 = "Frank,123 Main,925-555-1943,95122"
 
-val r(n1, n2, n3) = s
+val r(n1, n2, n3) = s2
 val phoneNumber = (n1.toInt, n2.toInt, n3.toInt)
+println(phoneNumber)
